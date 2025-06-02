@@ -1,0 +1,304 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background: rgba(25, 118, 241, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+
+
+/* Hero Section */
+.header {
+  background: url("bgphoto.jfif") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 8%;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  color: #080808;
+  min-width: 300px;
+  margin-top: 150px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color:rgba(25, 118, 241, 0.5);;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 50px;
+}
+
+
+/* Hero Form */
+.hero-form {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  min-width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color:rgba(25, 118, 241, 0.5);
+}
+
+.hero-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.hero-form input,
+.hero-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.hero-form .btn-form {
+  margin-top: 1.5rem;
+  background-color: rgba(25, 118, 241, 0.5);
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-form .btn-form:hover {
+  background-color: #13bcef;
+}
+
+/* Section Headings */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(25, 118, 241, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.section-about {
+  padding: 4rem 8%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Tours Section */
+.section-tours {
+  padding: 4rem 8%;
+  background-color: #f4f4f4;
+}
+
+.tour-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tour-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tour-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: rgba(25, 118, 241, 0.5);
+}
+
+.tour-card p {
+  padding: 0 1rem;
+}
+
+/* Benefits Section */
+.section-benefits {
+  padding: 4rem 8%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-benefits ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.section-benefits li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.section-benefits li::before {
+   /*content: "✔";*/
+  position: absolute;
+  left: 0;
+  color: #2e8b57;
+}
+
+/* CTA Section */
+.section-cta {
+  padding: 4rem 8%;
+  background-color: rgba(25, 118, 241, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.btn-cta {
+  background-color: #fff;
+  color: rgba(25, 118, 241, 0.5);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #e0e0e0;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-about, .section-tours, .section-benefits, .section-cta {
+    padding: 2rem;
+  }
+
+  .tour-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-form input,
+  .hero-form textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
